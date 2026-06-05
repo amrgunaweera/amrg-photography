@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "site": "amrg-photography",
     "public": "dist",
     "ignore": [
       "firebase.json",
