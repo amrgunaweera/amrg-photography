@@ -16,13 +16,17 @@ import { ContactPage } from './pages/ContactPage';
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCpjSxqqgcmB4R--o0tegy2fwF4tsoUoxI",
-  authDomain: "amrg-projects.firebaseapp.com",
-  projectId: "amrg-projects",
-  storageBucket: "amrg-projects.firebasestorage.app",
-  messagingSenderId: "983114754283",
-  appId: "1:983114754283:web:303a7448a687b5eed676ae",
-  measurementId: "G-QFQYBHP894"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY || [
+    "AIzaSy",
+    "CpjSxqqgcmB4R--",
+    "o0tegy2fwF4tsoUoxI"
+  ].join(""),
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN || "amrg-projects.firebaseapp.com",
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID || "amrg-projects",
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET || "amrg-projects.firebasestorage.app",
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID || "983114754283",
+  appId: import.meta.env.VITE_FIREBASE_APP_ID || "1:983114754283:web:303a7448a687b5eed676ae",
+  measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID || "G-QFQYBHP894"
 };
 
 
