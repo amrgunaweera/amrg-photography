@@ -28,7 +28,7 @@ export const LazyImage: React.FC<LazyImageProps> = ({
   }, [src]);
 
   return (
-    <div className={`relative overflow-hidden bg-gray-200 dark:bg-gray-800 ${className}`}>
+    <div className={`relative w-full h-full overflow-hidden bg-gray-200 dark:bg-gray-800 ${className}`}>
       {!isLoaded && (
         <div className="absolute inset-0 animate-pulse bg-gray-300 dark:bg-gray-700" />
       )}

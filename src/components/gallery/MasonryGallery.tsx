@@ -30,7 +30,7 @@ export const MasonryGallery: React.FC<MasonryGalleryProps> = ({ items }) => {
     <>
       <AnimatePresence mode="popLayout">
         <motion.div layout className="w-full">
-          <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 750: 2, 1024: 3 }}>
+          <ResponsiveMasonry columnsCountBreakPoints={{ 0: 1, 640: 2, 1024: 3 }}>
             <Masonry gutter="24px">
               {items.map((item, index) => (
                 <motion.div
